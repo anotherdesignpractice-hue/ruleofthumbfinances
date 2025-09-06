@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="library/style.css" type="text/css">
+  </head>
+
+  <body>
+
+    <p>Enter a number:</p>
+    <input type="text" id="takeHomePay" value="2000">
+
+    <p><button onclick="calculate();" class="button">Calculate</button></p>
+
+    <p>Multiplied by 2: $<span class="budget">_</span></p>
+    <p>Multiplied by 2: $<span class="budget">_</span></p>
+
+    <p>Multiplied by 3: $<span class="needs">_</span></p>
+    <p>Multiplied by 3: $<span class="needs">_</span></p>
+
+  <script>
+
+    function calculate(className, text) {
+
+      var elms = document.querySelectorAll('.' + className), i;
+
+      for (i = 0; i < elms.length; ++i) {
+          elms[i].textContent = text;
+      }
+
+      let income = takeHomePay.value;
+      
+      calculate('budget', income*2);
+      calculate('needs', income*3);
+      
+    }
+
+  </script>
+
+  </body>
+</html>
