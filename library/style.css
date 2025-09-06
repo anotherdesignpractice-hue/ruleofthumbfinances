@@ -1,3 +1,5 @@
+/* Global * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
 * {
     font-family: helvetica neue, sans-serif;
     font-size: 20px;
@@ -7,15 +9,17 @@
   body {
     margin: 10%;
   }
-  
+
+/* Header * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
   h3 {
       font-size: 12px;
       font-weight: 500;
       text-transform: uppercase;
   }  
-  
 
-  
+/* Button * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
   .button {
     color: black !important;
     font-size: 16px;
@@ -37,8 +41,72 @@
     border-bottom: 1px solid black;
     border-radius: 0px;
   }
+
+/* Section * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+  .section {
+    margin: 50px 0;
+  }
   
-  /* Mediaqueries */
+/* Accordion * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+  
+  .accordioncontainer {
+    padding: 10px 0 25px 0;
+    /* border: 1px solid orange; */
+  }
+  
+  .accordion {
+    cursor: pointer;
+    border: 0px;
+    width: 100%;
+    text-align: left;
+    padding: 0 0 25px 0;
+    background-color: #fff;
+    /* border: 1px solid purple; */
+  }
+  
+  .active, .accordion:hover {
+    background-color: #fff;
+    /* border: 1px solid green; */
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    margin: -26px 0 0 0;
+    float: right;
+    /* border: 1px solid blue; */
+  }
+  
+  .active:after {
+    content: "\2212";
+    /* border: 1px solid red; */
+  }
+  
+  .panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-bottom: 1px solid black;
+    margin: 0;
+    /* border: 1px solid red; */
+  }
+  
+  .panelLastChild {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-bottom: 0px;
+    margin: 0;
+    /* border: 1px solid red; */
+  }
+  
+  .panel p, .panel li, .panelLastChild li {
+    /* color:blue; */
+    padding: 0 0 20px 0;
+    line-height: 1em;
+  }
+  
+/* Mediaquieries * * * * * * * * * * * * * * * * * * * * * * * * * */
   
   @media (width <= 700px) {
   

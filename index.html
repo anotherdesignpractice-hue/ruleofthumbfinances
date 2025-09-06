@@ -1,44 +1,56 @@
 <!DOCTYPE html>
 <html>
-  <head><title>Comma Test</title>
+  <head><title>Rule of Thumb Finances</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="library/style.css" type="text/css">
   </head>
 
   <body>
 
-    <p>Enter a number:</p>
-    $<input type="text" id="inputNumber" value="2,000.32">
+    <div class="section">
+      <p>Monthly income:</p>
+      $<input type="text" id="inputSalary" value="20,000">
+    </div>
 
     <p><button onclick="calculate();" class="button">Calculate</button></p>
 
-    <p>Multiplied by 2: $<span class="budget">_</span></p>
-    <p>Multiplied by 2: $<span class="budget">_</span></p>
+    <div class="section">
+      Budget
+      <p>Needs: $<span class="needs">__________</span></p>
+      <p>Wants: $<span class="wants">__________</span></p>
+      <p>Savings: $<span class="savings">__________</span></p>
+    </div>
 
-    <p>Multiplied by 3: $<span class="needs">_</span></p>
-    <p>Multiplied by 3: $<span class="needs">_</span></p>
+    <div class="section">
+      Housing:
+      <p>25%: $<span class="housing25">__________</span></p>
+      <p>30%: $<span class="housing30">__________</span></p>
+    </div>
 
-  <script>
+    <div class="section">
+    Emergency Fund:
+      <p>3 months: $<span class="emergency3">__________</span></p>
+      <p>6 months: $<span class="emergency6">__________</span></p>
+      <p>9 months: $<span class="emergency9">__________</span></p>
+    </div>
 
-    function calculate(className, text) {
+    <div class="accordioncontainer">
+      <button class="accordion"><div id="budgetSavings">Savings</div></button>
+        <div class="panel">
+          <p>Paragraph</p>
+            <ul>
+              <li>Bullet</li>
+              <li>Bullet</li>
+              <li>Bullet</li>
+            </ul>
+          <p>Paragraph</p>
+          <p>Paragraph</p>
+          </div>
+         </div>
+      </div>
 
-      var elms = document.querySelectorAll('.' + className), i;
 
-      for (i = 0; i < elms.length; ++i) {
-          elms[i].textContent = text;
-      }
-
-      let outputNumber = inputNumber.value.replace(/,/g, '');
-      
-      let number = Math.round(outputNumber*2);
-      let formattedNumber = number.toLocaleString('en-US');
-
-      calculate('budget', formattedNumber);
-      calculate('needs', income*3);
-      
-    }
-
-  </script>
+  <script src="library/script.js"></script>
 
   </body>
 </html>
