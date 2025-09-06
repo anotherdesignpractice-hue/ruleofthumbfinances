@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head><title>Test</title>
+  <head><title>Comma Test</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="library/style.css" type="text/css">
   </head>
@@ -8,7 +8,7 @@
   <body>
 
     <p>Enter a number:</p>
-    <input type="text" id="takeHomePay" value="2000">
+    $<input type="text" id="inputNumber" value="2,000.32">
 
     <p><button onclick="calculate();" class="button">Calculate</button></p>
 
@@ -28,9 +28,12 @@
           elms[i].textContent = text;
       }
 
-      let income = takeHomePay.value;
+      let outputNumber = inputNumber.value.replace(/,/g, '');
       
-      calculate('budget', income*2);
+      let number = Math.round(outputNumber*2);
+      let formattedNumber = number.toLocaleString('en-US');
+
+      calculate('budget', formattedNumber);
       calculate('needs', income*3);
       
     }
