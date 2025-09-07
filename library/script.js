@@ -30,20 +30,20 @@ function calculate() {
 
     let savingsNeedsUnit = income*0.5;
 
-    savings3.innerHTML = `${format(savingsNeedsUnit*3)} lasts 3 months of needs`;
-    savings3Time1.innerHTML = `Takes ${savingsNeedsUnit*3/(income*0.2)} months to save`;
-    savings3Time2.innerHTML = `Or ${savingsNeedsUnit*3/(income*0.5)} months if you only spend on needs`;
-    savings3Time3.innerHTML = `Or ${savingsNeedsUnit*3/income} months if you spend nothing`;
+    savings3.innerHTML = `${format(savingsNeedsUnit*3)} to cover 3 months of needs`;
+    savings3Time1.innerHTML = `${savingsNeedsUnit*3/(income*0.2)} months of savings budget`;
+    savings3Time2.innerHTML = `${savingsNeedsUnit*3/(income*0.5)} months of wants + savings budgets`;
+    savings3Time3.innerHTML = `${savingsNeedsUnit*3/income} months of full paycheck`;
 
-    savings6.innerHTML = `${format(savingsNeedsUnit*6)} lasts 6 months of needs`;
-    savings6Time1.innerHTML = `Takes ${savingsNeedsUnit*6/(income*0.2)} months to save`;
-    savings6Time2.innerHTML = `Or ${savingsNeedsUnit*6/(income*0.5)} months if you only spend on needs`;
-    savings6Time3.innerHTML = `Or ${savingsNeedsUnit*6/income} months if you spend nothing`;
+    savings6.innerHTML = `${format(savingsNeedsUnit*6)} to cover 6 months of needs`;
+    savings6Time1.innerHTML = `${savingsNeedsUnit*6/(income*0.2)} months of savings budget`;
+    savings6Time2.innerHTML = `${savingsNeedsUnit*6/(income*0.5)} months of wants + savings budgets`;
+    savings6Time3.innerHTML = `${savingsNeedsUnit*6/income} months of full paycheck`;
 
-    savings9.innerHTML = `${format(savingsNeedsUnit*9)} lasts 9 months of needs`;
-    savings9Time1.innerHTML = `Takes ${savingsNeedsUnit*9/(income*0.2)} months to save`;
-    savings9Time2.innerHTML = `Or ${savingsNeedsUnit*9/(income*0.5)} months if you only spend on needs`;
-    savings9Time3.innerHTML = `Or ${savingsNeedsUnit*9/income} months if you spend nothing`;
+    savings9.innerHTML = `${format(savingsNeedsUnit*9)} to cover 9 months of needs`;
+    savings9Time1.innerHTML = `${savingsNeedsUnit*9/(income*0.2)} months of savings budget`;
+    savings9Time2.innerHTML = `${savingsNeedsUnit*9/(income*0.5)} months of wants + savings budgets`;
+    savings9Time3.innerHTML = `${savingsNeedsUnit*9/income} months of full paycheck`;
 }
 
 var acc = document.getElementsByClassName("accordion");
