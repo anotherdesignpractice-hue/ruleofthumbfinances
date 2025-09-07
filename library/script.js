@@ -31,17 +31,17 @@ function calculate() {
     let savingsNeedsUnit = income*0.5;
 
     savings3.innerHTML = `${format(savingsNeedsUnit*3)} to cover 3 months of needs`;
-    savings3Time1.innerHTML = `${savingsNeedsUnit*3/(income*0.2)} months of savings budget`;
+    savings3Time1.innerHTML = `This would take ${savingsNeedsUnit*3/(income*0.2)} months of savings budget`;
     savings3Time2.innerHTML = `${savingsNeedsUnit*3/(income*0.5)} months of wants + savings budgets`;
     savings3Time3.innerHTML = `${savingsNeedsUnit*3/income} months of full paycheck`;
 
     savings6.innerHTML = `${format(savingsNeedsUnit*6)} to cover 6 months of needs`;
-    savings6Time1.innerHTML = `${savingsNeedsUnit*6/(income*0.2)} months of savings budget`;
+    savings6Time1.innerHTML = `This would take ${savingsNeedsUnit*6/(income*0.2)} months of savings budget`;
     savings6Time2.innerHTML = `${savingsNeedsUnit*6/(income*0.5)} months of wants + savings budgets`;
     savings6Time3.innerHTML = `${savingsNeedsUnit*6/income} months of full paycheck`;
 
     savings9.innerHTML = `${format(savingsNeedsUnit*9)} to cover 9 months of needs`;
-    savings9Time1.innerHTML = `${savingsNeedsUnit*9/(income*0.2)} months of savings budget`;
+    savings9Time1.innerHTML = `This would take ${savingsNeedsUnit*9/(income*0.2)} months of savings budget`;
     savings9Time2.innerHTML = `${savingsNeedsUnit*9/(income*0.5)} months of wants + savings budgets`;
     savings9Time3.innerHTML = `${savingsNeedsUnit*9/income} months of full paycheck`;
 }
