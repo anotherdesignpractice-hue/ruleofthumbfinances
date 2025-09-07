@@ -8,12 +8,10 @@
   <body>
 
     <div>
-      <p>Rule of Thumb Finances</p>
+      <h3>Rule of Thumb Finances 🌞</h3>
       <p class="description">
-        I made this tool after noticing that people, whether they made a modest or high salary, started with
-        the same rule of thumbs. I am not a finance professional, I simply put together figures I noticed a lot
-        of people use. You're free to use this as a starting point - but note that this is not personalized
-        financial advice and I am not liable for how you make financial decisions :) got it? Good!<br><br>
+        I made this tool after noticing that people, whether they make a modest or high salary, start with the
+        same rule of thumbs. Now you can know them!<br><br>
       </p>
 
     </div>
@@ -24,23 +22,23 @@
 
 <!-- Income -------------------------------------------------------------------------------------------------->
     <div class="section">
-      <h3>Your income</h3>
-        <p>Monthly take-home pay:</p>
+      <h3>Your income 🤲🏼</h3>
+        <p>What is your monthly take-home pay?</p>
         $<input type="text" id="takeHomePay" value="5000">
         <p><button onclick="calculate();" class="button">Calculate</button></p>
     </div>
 
     <div class="section">
-      <h3>Budget</h3>
+      <h3>Budget 🤑</h3>
         <h2>A simple and trusted starting point is the <a href="https://www.google.com/search?q=budgeting+rule+of+thumb+50+30+20&sca_esv=3133b51e556538d0&rlz=1C5CHFA_enUS1092US1092&sxsrf=AE3TifN9FgQv4VdPoVjFLGrLiplNLROzSQ%3A1757194198225&ei=1qe8aKLGDdXTkPIP_ZSHuQY&ved=0ahUKEwiiifK_isWPAxXVKUQIHX3KIWcQ4dUDCBE&uact=5&oq=budgeting+rule+of+thumb+50+30+20&gs_lp=Egxnd3Mtd2l6LXNlcnAiIGJ1ZGdldGluZyBydWxlIG9mIHRodW1iIDUwIDMwIDIwMgYQABgWGB4yCxAAGIAEGIYDGIoFMggQABiiBBiJBUiZKFD3BlivJXACeAGQAQGYAcEBoAGEEKoBBDExLji4AQPIAQD4AQGYAg-gAsgJwgIKEAAYsAMY1gQYR8ICCBAhGKABGMMEwgIKECEYoAEYwwQYCsICCBAAGIAEGKIEwgIFECEYoAHCAgUQIRifBcICBRAAGO8FmAMAiAYBkAYIkgcEMTMuMqAHojmyBwQxMS4yuAe8CcIHBjAuMS4xNMgHOw&sclient=gws-wiz-serp" target="_blank">
           50/30/20 rule</a></h2>
 
         <div class="accordionblock">
 
           <div class="accordioncontainer">
-            <button class="accordion">
+            <div class="accordion">
               <div id="budgetNeeds">Needs budget</div>
-            </button>
+            </div>
             <div class="panel">
                 <ul>
                   <li>Rent or mortgage</li>
@@ -53,9 +51,9 @@
           </div>
 
           <div class="accordioncontainer">
-            <button class="accordion">
+            <div class="accordion">
               <div id="budgetWants">Wants budget</div>
-            </button>
+            </div>
             <div class="panel">
                 <ul>
                   <li>Restaurants</li>
@@ -68,9 +66,9 @@
           </div>
 
           <div class="accordioncontainer">
-            <button class="accordion">
+            <div class="accordion">
               <div id="budgetSavings">Savings budget</div>
-            </button>
+            </div>
             <div class="panelLastChild">
                 <ul>
                   <li>Car repairs</li>
@@ -86,15 +84,15 @@
     </div>   
 
     <div class="section">
-      <h3>Housing</h3>
+      <h3>Housing 🏠</h3>
         <h2>People like to aim for <a href="https://www.google.com/search?q=housing+rule+of+thumb+25+30&sca_esv=3133b51e556538d0&rlz=1C5CHFA_enUS1092US1092&sxsrf=AE3TifPShN6md6l2AyBXkjfMe-U5waQERg%3A1757194074239&ei=Wqe8aOC0DsPDkPIPgfH34AU&ved=0ahUKEwjgyeKEisWPAxXDIUQIHYH4HVwQ4dUDCBE&uact=5&oq=housing+rule+of+thumb+25+30&gs_lp=Egxnd3Mtd2l6LXNlcnAiG2hvdXNpbmcgcnVsZSBvZiB0aHVtYiAyNSAzMDIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYR0iZA1AAWABwAXgBkAEAmAEAoAEAqgEAuAEDyAEAmAIBoAIEmAMAiAYBkAYIkgcBMaAHALIHALgHAMIHAzItMcgHAw&sclient=gws-wiz-serp" target="_blank">
           25% to 30%</a> of their income when possible</h2>
   
         <div class="accordionblock">
           <div class="accordioncontainer">
-            <button class="accordion">
+            <div class="accordion">
               <div id="housingLow">25%</div>
-            </button>
+            </div>
             <ul class="panel">
               <li id="housingLowPoint1"></li>
               <li id="housingLowPoint2"></li>
@@ -103,9 +101,9 @@
           </div>
 
           <div class="accordioncontainer">
-            <button class="accordion">
+            <div class="accordion">
               <div id="housingHigh">30%</div>
-            </button>
+            </div>
             <ul class="panelLastChild">
               <li id="housingHighPoint1"></li>
               <li id="housingHighPoint2"></li>
@@ -117,15 +115,15 @@
 
 
     <div class="section">
-      <h3>Emergency fund</h3>
+      <h3>Emergency fund 🚨</h3>
         <h2>The <a href="https://www.google.com/search?q=emergency+fund+rule+of+thumb+3+6+9&sca_esv=3133b51e556538d0&rlz=1C5CHFA_enUS1092US1092&sxsrf=AE3TifMVi0-6hOvTzv_lwOxNULa6x4byJg%3A1757194167088&ei=t6e8aMCXBZmQur8Py8WagAE&ved=0ahUKEwiAz4WxisWPAxUZiO4BHcuiBhAQ4dUDCBE&uact=5&oq=emergency+fund+rule+of+thumb+3+6+9&gs_lp=Egxnd3Mtd2l6LXNlcnAiImVtZXJnZW5jeSBmdW5kIHJ1bGUgb2YgdGh1bWIgMyA2IDkyCBAAGIAEGKIEMggQABiABBiiBDIIEAAYgAQYogRIoxFQ_AZY5g5wAngBkAEAmAGcAaABmAeqAQM2LjO4AQPIAQD4AQGYAgegAvsDwgIKEAAYsAMY1gQYR8ICBBAjGCfCAgYQABgIGB7CAgsQABiABBiGAxiKBcICBRAAGO8FwgIKECEYoAEYwwQYCsICCBAhGKABGMMEmAMAiAYBkAYIkgcDNi4xoAf_HrIHAzQuMbgH8wPCBwcwLjQuMi4xyAcZ&sclient=gws-wiz-serp" target="_blank">
           3/6/9</a> rule can be a great start</h2>
   
         <div class="accordionblock">
           <div class="accordioncontainer">
-            <button class="accordion">
+            <div class="accordion">
               <div id="savings3">3 months of needs</div>
-            </button>
+            </div>
             <ul class="panel">
               <li id="savings3Time1"></li>
               <li id="savings3Time2"></li>
@@ -134,9 +132,9 @@
           </div>
 
           <div class="accordioncontainer">
-            <button class="accordion">
+            <div class="accordion">
               <div id="savings6">6 months of needs</div>
-            </button>
+            </div>
             <ul class="panel">
               <li id="savings6Time1"></li>
               <li id="savings6Time2"></li>
@@ -145,9 +143,9 @@
           </div>
 
           <div class="accordioncontainer">
-            <button class="accordion">
+            <div class="accordion">
               <div id="savings9">9 months of needs</div>
-            </button>
+            </div>
             <ul class="panelLastChild">
               <li id="savings9Time1"></li>
               <li id="savings9Time2"></li>
@@ -158,16 +156,36 @@
     </div>
 
     <div class="section">
-        <h3>Coming next</h3>
+        <h3>Help wanted 😇</h3>
 
-          <p>I'd love to include freelance rates, house downpayments, and retirement next. Reach out if you'd like to help!</p>
-
-          <p>People First Projects is fully self-funded, it has no monetary interests and does not track you or save your data.</p>
+        <p>Freelance rates 💸</p>
+        <p>House downpayments 🏡</p>
+        <p>Retirement 🧓🏼</p>
+          <br>
+          <p class="footer">This is about my limit for coding. Email anotherdesignpractice@gmail.com if you're interested in helping!</p>
         
-          <p>Follow along on <a href="https://patreon.com/PeopleFirstProjects?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink" target="_blank">Patreon</a>
-          or <a href="https://substack.com/@peoplefirstprojects?utm_campaign=profile&utm_medium=profile-page" target="_blank">Substack</a> to get updates from time to time.</p>
-          
         </div>
+
+            <div class="section">
+
+
+    <h3>About 💛</h3>
+
+        <p>This project is fully self-funded.<br><br>
+          
+          It has no monetary aspirations, doesn't track you, and doesn't save your data.<br><br>
+        
+          Follow People First Projects on <a href="https://patreon.com/PeopleFirstProjects?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink" target="_blank">Patreon</a>
+          or <a href="https://substack.com/@peoplefirstprojects?utm_campaign=profile&utm_medium=profile-page" target="_blank">Substack</a> to get updates from time to time.
+          </p>
+        </div>
+
+<br>
+  <div class="disclaimer">
+
+    RULE OF THUMB FINANCES & PEOPLE FIRST PROJECTS ARE NOT ENGAGED IN RENDERING LEGAL FINANCIAL ADVICE OR SERVICES VIA THIS TOOL. THEY ARE NOT A FINANCIAL PLANNER, BROKER OR TAX ADVISOR. This tool is intended only to provide information. Your personal financial situation is unique, and any information and advice obtained through this tool may not be appropriate for your situation. Accordingly, before making any final decisions or implementing any financial strategy, you should consider obtaining additional information and advice from your accountant or other financial advisers who are fully aware of your individual circumstances.
+
+  </div>
 
   <script src="library/script.js"></script>
   </body>

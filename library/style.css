@@ -11,7 +11,7 @@
 
   .description {
     width: 80%;
-    padding: 50px 0 50px 0;
+    padding: 10px 0 50px 0;
     line-height: 1.75em;
   }
   
@@ -146,12 +146,21 @@
     line-height: 1.5em;
   }
 
+  .disclaimer {
+    font-size: 12px;
+  }
+
   /* Mediaqueries * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
   
   @media (width <= 700px) {
   
     body {
       margin: 25px;
+    }
+
+    .description {
+    width: 100%;
+    line-height: 1.5em;
     }
   
   }
