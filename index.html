@@ -30,6 +30,8 @@
         <p><button onclick="calculate();" class="button">Calculate</button></p>
     </div>
 
+<!-- Budget -->
+
     <div class="section">
       <h3>Budget 🤑</h3>
         <h2>A simple and trusted starting point is the <a href="https://www.google.com/search?q=budgeting+rule+of+thumb+50+30+20&sca_esv=3133b51e556538d0&rlz=1C5CHFA_enUS1092US1092&sxsrf=AE3TifN9FgQv4VdPoVjFLGrLiplNLROzSQ%3A1757194198225&ei=1qe8aKLGDdXTkPIP_ZSHuQY&ved=0ahUKEwiiifK_isWPAxXVKUQIHX3KIWcQ4dUDCBE&uact=5&oq=budgeting+rule+of+thumb+50+30+20&gs_lp=Egxnd3Mtd2l6LXNlcnAiIGJ1ZGdldGluZyBydWxlIG9mIHRodW1iIDUwIDMwIDIwMgYQABgWGB4yCxAAGIAEGIYDGIoFMggQABiiBBiJBUiZKFD3BlivJXACeAGQAQGYAcEBoAGEEKoBBDExLji4AQPIAQD4AQGYAg-gAsgJwgIKEAAYsAMY1gQYR8ICCBAhGKABGMMEwgIKECEYoAEYwwQYCsICCBAAGIAEGKIEwgIFECEYoAHCAgUQIRifBcICBRAAGO8FmAMAiAYBkAYIkgcEMTMuMqAHojmyBwQxMS4yuAe8CcIHBjAuMS4xNMgHOw&sclient=gws-wiz-serp" target="_blank">
@@ -85,6 +87,8 @@
         </div>
     </div>   
 
+<!-- Housing -->
+
     <div class="section">
       <h3>Housing 🏠</h3>
         <h2>People like to aim for <a href="https://www.google.com/search?q=housing+rule+of+thumb+25+30&sca_esv=3133b51e556538d0&rlz=1C5CHFA_enUS1092US1092&sxsrf=AE3TifPShN6md6l2AyBXkjfMe-U5waQERg%3A1757194074239&ei=Wqe8aOC0DsPDkPIPgfH34AU&ved=0ahUKEwjgyeKEisWPAxXDIUQIHYH4HVwQ4dUDCBE&uact=5&oq=housing+rule+of+thumb+25+30&gs_lp=Egxnd3Mtd2l6LXNlcnAiG2hvdXNpbmcgcnVsZSBvZiB0aHVtYiAyNSAzMDIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYR0iZA1AAWABwAXgBkAEAmAEAoAEAqgEAuAEDyAEAmAIBoAIEmAMAiAYBkAYIkgcBMaAHALIHALgHAMIHAzItMcgHAw&sclient=gws-wiz-serp" target="_blank">
@@ -93,28 +97,33 @@
         <div class="accordionblock">
           <div class="accordioncontainer">
             <div class="accordion">
-              <div id="housingLow">25%</div>
+              <div id="housingLow">25% is $1,250</div>
             </div>
-            <ul class="panel">
-              <li id="housingLowPoint1"></li>
-              <li id="housingLowPoint2"></li>
-              <li id="housingLowPoint3"></li>
-            </ul>
+            <div class="panel">
+              <ul>
+                <li id="housingLowPoint1">$1,250 left for needs</li>
+                <li id="housingLowPoint2">$1,500 left for wants</li>
+                <li id="housingLowPoint3">$1,000 left for savings</li>
+              </ul>
+            </div>
           </div>
 
           <div class="accordioncontainer">
             <div class="accordion">
-              <div id="housingHigh">30%</div>
+              <div id="housingHigh">30% is $1,500</div>
             </div>
-            <ul class="panelLastChild">
-              <li id="housingHighPoint1"></li>
-              <li id="housingHighPoint2"></li>
-              <li id="housingHighPoint3"></li>
-            </ul>
+            <div class="panelLastChild">
+              <ul>
+                <li id="housingHighPoint1">$1,000 left for needs</li>
+                <li id="housingHighPoint2">$1,500 left for wants</li>
+                <li id="housingHighPoint3">$1,000 left for savings</li>
+              </ul>
+            </div>
           </div>
         </div>
     </div>
 
+<!-- Emergency fund -->
 
     <div class="section">
       <h3>Emergency fund 🚨</h3>
@@ -122,41 +131,66 @@
           3/6/9</a> rule offers these options</h2>
   
         <div class="accordionblock">
+
           <div class="accordioncontainer">
+
             <div class="accordion">
-              <div id="savings3">3 months</div>
+              <div id="savings3">
+                $7,500 to cover 3 months of needs
+              </div>
             </div>
-            <ul class="panel">
-              <li id="savings3Time1"></li>
-              <li id="savings3Time2"></li>
-              <li id="savings3Time3"></li>
-              </p>
-            </ul>
+
+            <div class="panel">
+              <ul>
+                <li id="savings3Time1">This would take 7.5 months of savings budget</li>
+                <li id="savings3Time2">3 months of wants + savings budgets</li>
+                <li id="savings3Time3">1.5 months of full paycheck</li>
+              </ul>
+            </div>
+
           </div>
 
           <div class="accordioncontainer">
+
             <div class="accordion">
-              <div id="savings6">6 months</div>
+              <div id="savings6">
+                $15,000 to cover 6 months of needs
+              </div>
             </div>
-            <ul class="panel">
-              <li id="savings6Time1"></li>
-              <li id="savings6Time2"></li>
-              <li id="savings6Time3"></li>
-            </ul>
+
+            <div class="panel">
+              <ul>
+                <li id="savings6Time1">This would take 15 months of savings budget</li>
+                <li id="savings6Time2">6 months of wants + savings budgets</li>
+                <li id="savings6Time3">3 months of full paycheck</li>
+              </ul>
+            </div>
+
           </div>
 
           <div class="accordioncontainer">
+
             <div class="accordion">
-              <div id="savings9">9 months</div>
+              <div id="savings9">
+                $15,000 to cover 9 months of needs
+              </div>
             </div>
-            <ul class="panelLastChild">
-              <li id="savings9Time1"></li>
-              <li id="savings9Time2"></li>
-              <li id="savings9Time3"></li>
-            </ul>
+
+            <div class="panelLastChild">
+              <ul>
+                <li id="savings9Time1">This would take 22.5 months of savings budget</li>
+                <li id="savings9Time2">9 months of wants + savings budgets</li>
+                <li id="savings9Time3">4.5 months of full paycheck</li>
+              </ul>
+            </div>
+
           </div>
+
         </div>
     </div>
+
+
+<!-- Coming up -->
 
     <div class="section">
 
@@ -170,9 +204,10 @@
           <p class="footer">This is about my limit for coding. If you're interested in helping, email anotherdesignpractice@gmail.com!</p>
         
         </div>
-
+        <br><br>
             <div class="section">
 
+<!-- About -->
 
     <h3>About 💛</h3>
 
@@ -185,12 +220,14 @@
           </p>
         </div>
 
-<br>
-  <div class="disclaimer">
+<!-- Disclaimer -->
 
-    RULE OF THUMB FINANCES & PEOPLE FIRST PROJECTS ARE NOT ENGAGED IN RENDERING LEGAL FINANCIAL ADVICE OR SERVICES VIA THIS TOOL. THEY ARE NOT A FINANCIAL PLANNER, BROKER OR TAX ADVISOR. This tool is intended only to provide information. Your personal financial situation is unique, and any information and advice obtained through this tool may not be appropriate for your situation. Accordingly, before making any final decisions or implementing any financial strategy, you should consider obtaining additional information and advice from your accountant or other financial advisers who are fully aware of your individual circumstances.
+      <br>
+      <div class="disclaimer">
 
-  </div>
+        RULE OF THUMB FINANCES & PEOPLE FIRST PROJECTS ARE NOT ENGAGED IN RENDERING LEGAL FINANCIAL ADVICE OR SERVICES VIA THIS TOOL. THEY ARE NOT A FINANCIAL PLANNER, BROKER OR TAX ADVISOR. This tool is intended only to provide information. Your personal financial situation is unique, and any information and advice obtained through this tool may not be appropriate for your situation. Accordingly, before making any final decisions or implementing any financial strategy, you should consider obtaining additional information and advice from your accountant or other financial advisers who are fully aware of your individual circumstances.
+
+      </div>
 
   <script src="library/script.js"></script>
   </body>

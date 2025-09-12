@@ -40,10 +40,16 @@ function calculate() {
     savings6Time2.innerHTML = `${savingsNeedsUnit*6/(income*0.5)} months of wants + savings budgets`;
     savings6Time3.innerHTML = `${savingsNeedsUnit*6/income} months of full paycheck`;
 
-    savings9.innerHTML = `${format(savingsNeedsUnit*9)} to cover 9 months of needs`;
+    savings9.innerHTML = `${format(savingsNeedsUnit*6)} to cover 9 months of needs`;
     savings9Time1.innerHTML = `This would take ${savingsNeedsUnit*9/(income*0.2)} months of savings budget`;
     savings9Time2.innerHTML = `${savingsNeedsUnit*9/(income*0.5)} months of wants + savings budgets`;
     savings9Time3.innerHTML = `${savingsNeedsUnit*9/income} months of full paycheck`;
+}
+
+function calculateDebt() {
+
+    avalanche.innerHTML = `Works!`;
+
 }
 
 var acc = document.getElementsByClassName("accordion");
