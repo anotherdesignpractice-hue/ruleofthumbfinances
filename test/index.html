@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Rule of Thumb Finances</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="library/style.css" type="text/css">
+  </head>
+
+  <body>
+
+<!-- HEADER ------------------------------------------------------------------>
+    <div>
+      <h3>Rule of Thumb Finances 🌞</h3>
+      <p class="description">
+        Get a birds eye view of your finances. People, whether they make a modest or high salary, start with these same rule of thumbs.
+        Now they're all in one place!
+      </p>
+    </div>
+
+<!-- INPUT ------------------------------------------------------------------>    
+    <div class="section">
+      <h3>Your income 🤲🏼</h3>
+      <p>Monthly income after taxes:</p>
+      <p>$<input type="text" id="inputNetMonthly" value="5,000"></p>
+      <p><button onclick="calculate();" class="button">Calculate</button></p>
+    </div>
+
+<!-- BUDGET ------------------------------------------------------------------>
+    <div class="section">
+      <h3>Budget 🤑</h3>
+      <h2>A simple and trusted starting point is the <a href="https://www.google.com/search?q=budgeting+rule+of+thumb+50+30+20&sca_esv=3133b51e556538d0&rlz=1C5CHFA_enUS1092US1092&sxsrf=AE3TifN9FgQv4VdPoVjFLGrLiplNLROzSQ%3A1757194198225&ei=1qe8aKLGDdXTkPIP_ZSHuQY&ved=0ahUKEwiiifK_isWPAxXVKUQIHX3KIWcQ4dUDCBE&uact=5&oq=budgeting+rule+of+thumb+50+30+20&gs_lp=Egxnd3Mtd2l6LXNlcnAiIGJ1ZGdldGluZyBydWxlIG9mIHRodW1iIDUwIDMwIDIwMgYQABgWGB4yCxAAGIAEGIYDGIoFMggQABiiBBiJBUiZKFD3BlivJXACeAGQAQGYAcEBoAGEEKoBBDExLji4AQPIAQD4AQGYAg-gAsgJwgIKEAAYsAMY1gQYR8ICCBAhGKABGMMEwgIKECEYoAEYwwQYCsICCBAAGIAEGKIEwgIFECEYoAHCAgUQIRifBcICBRAAGO8FmAMAiAYBkAYIkgcEMTMuMqAHojmyBwQxMS4yuAe8CcIHBjAuMS4xNMgHOw&sclient=gws-wiz-serp" target="_blank">
+          50/30/20 rule</a>.
+      </h2>
+
+      <div class="accoSection">
+
+          <!-- Row -->
+          <div class="accoRow">
+            <div class="accordion">
+              <div>Needs $<span class="needs">_</span></div>
+            </div>
+            <div class="panel">
+              <ul>
+                <li>Rent or mortgage</li>
+                <li>Utilities</li>
+                <li>Groceries</li>
+                <li>Medications</li>
+                <li>Gas</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Row -->
+          <div class="accoRow">
+            <div class="accordion">
+              <div>Wants $<span class="wants">1,500</span></div>
+            </div>
+            <div class="panel">
+              <ul>
+                <li>Restaurants</li>
+                <li>Hobbies</li>
+                <li>Entertainment</li>
+                <li>Vacations</li>
+                <li>Gifts/donations</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Row -->
+          <div class="accoRow lastchild">
+            <div class="accordion">
+              <div>Savings $<span class="savings">1,000</span></div>
+            </div>
+            <div class="panel">
+              <ul>
+                <li>Car repairs</li>
+                <li>Debt</li>
+                <li>Retirement</li>
+                <li>Unexpected expenses</li>
+                <li>Emergency fund in case of job loss</li>
+              </ul>
+            </div>
+          </div>
+      
+      </div> <!-- Close accordion section -->
+
+    </div> <!-- Close section -->
+
+
+<!-- HOUSING ------------------------------------------------------------------>
+    <div class="section">
+      <h3>Housing 🏠</h3>
+      <h2>Aim for <a href="https://www.google.com/search?q=housing+rule+of+thumb+25+30&sca_esv=3133b51e556538d0&rlz=1C5CHFA_enUS1092US1092&sxsrf=AE3TifPShN6md6l2AyBXkjfMe-U5waQERg%3A1757194074239&ei=Wqe8aOC0DsPDkPIPgfH34AU&ved=0ahUKEwjgyeKEisWPAxXDIUQIHYH4HVwQ4dUDCBE&uact=5&oq=housing+rule+of+thumb+25+30&gs_lp=Egxnd3Mtd2l6LXNlcnAiG2hvdXNpbmcgcnVsZSBvZiB0aHVtYiAyNSAzMDIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYR0iZA1AAWABwAXgBkAEAmAEAoAEAqgEAuAEDyAEAmAIBoAIEmAMAiAYBkAYIkgcBMaAHALIHALgHAMIHAzItMcgHAw&sclient=gws-wiz-serp" target="_blank">
+          25% to 30%</a> of income if possible.
+      </h2>
+
+      <div class="accoSection">
+
+          <!-- Row -->
+          <div class="accoRow">
+            <div class="accordion">
+              <div>25% is $<span class="housing25">1,250</span></div>
+            </div>
+            <div class="panel">
+              <p>Budget after housing:</p>
+              <ul>
+                <li>Needs $<span class="needsMinusHousing25">1,250</span></li>
+                <li>Wants $<span class="wants">1,500</span></li>
+                <li>Savings $<span class="savings">1,000</span></li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Row -->
+          <div class="accoRow lastchild">
+            <div class="accordion">
+              <div>30% is $<span class="housing30">1,500</div>
+            </div>
+            <div class="panel">
+              <p>Budget after housing:</p>
+              <ul>
+                <li>Needs $<span class="needsMinusHousing30">1,000</span></li>
+                <li>Wants $<span class="wants">1,500</span></li>
+                <li>Savings $<span class="savings">1,000</span></li>
+              </ul>
+            </div>
+          </div>
+
+      </div> <!-- Close accordion section -->
+
+    </div> <!-- Close section -->
+
+<!-- EMERGENCY FUND ----------------------------------------------------------->
+    <div class="section">
+      <h3>Emergency fund 🚨</h3>
+      <h2>The <a href="https://www.google.com/search?q=emergency+fund+rule+of+thumb+3+6+9&sca_esv=3133b51e556538d0&rlz=1C5CHFA_enUS1092US1092&sxsrf=AE3TifMVi0-6hOvTzv_lwOxNULa6x4byJg%3A1757194167088&ei=t6e8aMCXBZmQur8Py8WagAE&ved=0ahUKEwiAz4WxisWPAxUZiO4BHcuiBhAQ4dUDCBE&uact=5&oq=emergency+fund+rule+of+thumb+3+6+9&gs_lp=Egxnd3Mtd2l6LXNlcnAiImVtZXJnZW5jeSBmdW5kIHJ1bGUgb2YgdGh1bWIgMyA2IDkyCBAAGIAEGKIEMggQABiABBiiBDIIEAAYgAQYogRIoxFQ_AZY5g5wAngBkAEAmAGcAaABmAeqAQM2LjO4AQPIAQD4AQGYAgegAvsDwgIKEAAYsAMY1gQYR8ICBBAjGCfCAgYQABgIGB7CAgsQABiABBiGAxiKBcICBRAAGO8FwgIKECEYoAEYwwQYCsICCBAhGKABGMMEmAMAiAYBkAYIkgcDNi4xoAf_HrIHAzQuMbgH8wPCBwcwLjQuMi4xyAcZ&sclient=gws-wiz-serp" target="_blank">
+          3/6/9 rule</a> offers 3 options.
+      </h2>
+
+      <p>How much do you have saved?</p>
+      $<input type="text" id="inputSavings" value="0">
+      <p><button onclick="calculate();" class="button">Update</button></p>
+
+      <div class="accoSection">
+
+          <!-- Row -->
+          <div class="accoRow">
+            <div class="accordion">
+              <div>$<span class="emergencyFund3">7,500</span> to cover 3 months of needs</div>
+            </div>
+            <div class="panel">
+              <p>This takes:</p>
+              <ul>
+                <li><span class="emergencyFund3Time1">7.5</span> months of savings budget</li>
+                <li><span class="emergencyFund3Time2">3</span> months of wants & savings budget</li>
+                <li><span class="emergencyFund3Time3">1.5</span> months of full paycheck</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Row -->
+          <div class="accoRow">
+            <div class="accordion">
+              <div>$<span class="emergencyFund6">15,000</span> to cover 6 months of needs</div>
+            </div>
+            <div class="panel">
+              <p>This takes:</p>
+              <ul>
+                <li><span class="emergencyFund6Time1">15</span> months of savings budget</li>
+                <li><span class="emergencyFund6Time2">6</span> months of wants & savings budget</li>
+                <li><span class="emergencyFund6Time3">3</span> months of full paycheck</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Row -->
+          <div class="accoRow">
+            <div class="accordion">
+              <div>$<span class="emergencyFund9">22,500</span> to cover 9 months of needs</div>
+            </div>
+            <div class="panel">
+              <p>This takes:</p>
+              <ul>
+                <li><span class="emergencyFund9Time1">22.5</span> months of savings budget</li>
+                <li><span class="emergencyFund9Time2">9</span> months of wants & savings budget</li>
+                <li><span class="emergencyFund9Time3">4.5</span> months of full paycheck</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Row -->
+          <div class="accoRow lastchild">
+            <div class="accordion">
+              <div>Add your current savings</div>
+            </div>
+            <div class="panel">
+              
+            </div>
+          </div>
+
+      </div> <!-- Close accordion section -->
+
+    </div> <!-- Close section -->
+
+
+<!-- WHAT'S NEXT --------------------------------------------------------------------->
+    <div class="section">
+      <h3>What's next? 👀</h3>
+
+        <p>Self employment 💸</p>
+        <p>Student loans 🧑‍🎓</p>
+        <p>House downpayments 🏡</p>
+        <p>Retirement 🧓🏼</p>
+
+    </div> <!-- Close section -->
+
+<!-- ABOUT --------------------------------------------------------------------->
+    <div class="section">
+      <h3>About 💛</h3>
+      <p>This project is fully self-funded.<br><br>
+          
+          It has no monetary aspirations, doesn't track you, and doesn't save your data.<br><br>
+        
+          Follow People First Projects on <a href="https://patreon.com/PeopleFirstProjects?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink" target="_blank">Patreon</a>
+          or <a href="https://substack.com/@peoplefirstprojects?utm_campaign=profile&utm_medium=profile-page" target="_blank">Substack</a> to get updates from time to time.
+          </p>
+
+    </div> <!-- Close section -->
+    
+<!-- Disclaimer -->
+
+      <div class="disclaimer">
+
+        RULE OF THUMB FINANCES & PEOPLE FIRST PROJECTS ARE NOT ENGAGED IN RENDERING LEGAL FINANCIAL ADVICE OR
+        SERVICES VIA THIS TOOL. THEY ARE NOT A FINANCIAL PLANNER OR TAX ADVISOR. This tool is intended
+        only to provide information. Your personal financial situation is unique, and any information and advice
+        obtained through this tool may not be appropriate for your situation. Accordingly, before making any final
+        decisions or implementing any financial strategy, you should consider obtaining additional information and
+        advice from your accountant or other financial advisers who are fully aware of your individual circumstances.
+
+      </div> <!-- Close section -->
+
+  <script src="library/script.js"></script>
+
+  </body>
+</html>

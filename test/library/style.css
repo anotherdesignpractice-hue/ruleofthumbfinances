@@ -1,0 +1,192 @@
+* {
+    font-family: helvetica neue, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  body {
+    color: #311802;
+    margin: 10%;
+    background-color: #F6F0EC;
+  }
+
+  .description {
+    width: 80%;
+    padding: 0 0 50px 0;
+    line-height: 1.75em;
+  }
+  
+  .info {
+    opacity: 0.5;
+  }
+  
+  h1 {
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  h2 {
+    line-height: 1.75em;;
+  }
+  
+  h3 {
+      /* font-size: 12px; */
+      padding: 0 0 40px 0;
+      font-weight: 500;
+      /* text-transform: uppercase; */
+  }  
+
+  h4 {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  
+  a {
+    color: #311802 !important;
+    border-bottom: 1px dotted #311802;
+    text-decoration: none;
+  }
+
+  a:hover {
+    border-bottom: 1px solid #311802;
+  }
+  
+  .button {
+    color: #311802 !important;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 12px 20px;
+    margin: 20px 10px 20px 0;
+    border-radius: 4px;
+    border: 1px solid #311802;
+    background-color: #F6F0EC;
+  }
+  
+  .button:hover {
+    color: #F5E9DF !important;
+    font-weight: 400;
+    background-color: #311802;
+  }
+  
+  input {
+    color: #311802 !important;
+    background-color: #F6F0EC;
+    border: 0;
+    border-bottom: 1px solid #311802;
+    border-radius: 0px;
+  }
+  
+  .section {
+      border-top: 2px solid #311802;
+      padding: 40px 0;
+      /* border: 1px solid red; */
+  }
+  
+  .section h2 {
+      padding: 0 0 20px 0;
+  }
+
+  .disclaimer {
+    font-size: 12px;
+  }
+
+  /* Accordion * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+  
+  .accoSection { /* Above & below all accordions in section */
+    padding: 0 0 60px 0;
+    margin: 0;
+    /* border: 1px solid yellow; */
+  }
+
+  .accoRow { /* Top border to bottom border */
+    padding: 30px 0;
+    margin: 0;
+    border-bottom: 1px solid #311802;
+    /* border: 1px solid red; */
+  }
+  
+  .accordion { /* Row only*/
+    padding: 0 0;
+    margin: 0px;
+    cursor: pointer;
+    border: 0px;
+    width: 100%;
+    text-align: left;
+    background-color: #F6F0EC;
+    /* border: 1px solid purple; */
+  }
+
+  .panel { /* Immediately below label */
+    padding: 0;
+    margin: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    /* border: 1px solid red; */
+  }
+
+  .lastchild {
+    border: 0px;
+    padding-bottom: 0px;
+    /* border: 1px solid pink; */
+  }
+  
+  .panel ul { /* Each list block inside a panel */
+    margin: 0;
+    padding: 20px 0 15px 20px;
+    /* border: 1px solid orange; */
+  }
+
+  .panel p { /* Each paragraph block inside a panel */
+    margin: 0;
+    padding: 30px 0 0 0;
+    /* border: 1px solid orange; */
+  }
+
+  .panel li, .panelLastChild li { /* Each item inside a panel */
+    padding: 0 0 10px 8px;
+    margin: 0;
+    line-height: 1.5em;
+    /* border: 1px solid pink; */
+    /* color: violet; */
+  }
+
+/* Expand & collapse icons - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+  .accordion:after {
+    content: '\002B';
+    margin: -26px 0 0 0;
+    float: right;
+    /* border: 1px solid blue; */
+  }
+  
+  .active:after {
+    content: "\2212";
+    /* border: 1px solid red; */
+  }
+
+  /* Mediaqueries * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+  
+  @media (width <= 700px) {
+  
+    body {
+      margin: 60px 25px 25px 25px;
+    }
+
+    .description {
+    width: 100% !important;
+    line-height: 1.5em;
+    }
+
+    .disclaimer {
+    font-size: 10px !important;
+    }
+
+    h3 {
+      /* font-size: 12px; */
+      padding: 0 0 30px 0;
+      font-weight: 500;
+      /* text-transform: uppercase; */
+  }  
+  
+  }
