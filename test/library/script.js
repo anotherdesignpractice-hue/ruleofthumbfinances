@@ -40,6 +40,7 @@
     displayString('savings', format(savings));
 
     displayString('housing25', format(housing25));
+    displayString('housing30', format(housing30));
     displayString('needsMinusHousing25', format(needsMinusHousing25));
     displayString('needsMinusHousing30', format(needsMinusHousing30));
 
