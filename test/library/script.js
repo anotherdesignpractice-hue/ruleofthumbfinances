@@ -14,7 +14,9 @@
 
     // Housing math
     let housing25 = netMonthly*0.25;
+    let housing30 = netMonthly*0.30;
     let needsMinusHousing25 = needs-housing25;
+    let needsMinusHousing30 = needs-housing30;
 
     // Emergency fund math
     let emergencyFund3 = needs*3;
@@ -39,6 +41,7 @@
 
     displayString('housing25', format(housing25));
     displayString('needsMinusHousing25', format(needsMinusHousing25));
+    displayString('needsMinusHousing30', format(needsMinusHousing30));
 
     displayString('emergencyFund3', format(emergencyFund3));
       displayString('emergencyFund3Time1', format(emergencyFund3Time1));
@@ -80,9 +83,7 @@
 */
 
   function unformat(base) {
-
     return base.replace(/,/g, '');
-
   }
 
   function format(base) { // Make whole number & add comma
